@@ -1,0 +1,11 @@
+nav li {
+    display: inline-block;
+}
+nav ul {
+    padding: 0px;
+  }
+  
+  nav a {
+    color: #9d3400;
+    text-decoration: none;
+  }
