@@ -9,11 +9,11 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; 
-    padding: 20px 0; 
+    padding: 0px 0; 
   }
   
   img[alt="Logo"] {
-    padding-right: 7%;
+    padding-right: 3%;
   }
 
   nav {
@@ -27,10 +27,7 @@ nav li {
     display: block;
     margin-bottom: 10px;
     flex: 1;
-    margin-right: 10em
-    
-    
-    
+    margin-right: 10em       
 }
 
 nav ul {
@@ -43,14 +40,26 @@ nav ul {
   nav a {
     font-family: "sairasemicondensed", "Helvetica", Arial, sans-serif;
     font-size: 150%;
-  color: #FFFFFF
-;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   }
 
+  .unactive:hover {
+    text-decoration: underline;
+  }
+
+  .active {
+    color: #1D2540;
+    text-decoration: none;
+  }
+
   body {
     background-color: #1D2540;
+  }
+
+ footer {
+
   }
 
   @media screen and (max-width: 1000px) {
