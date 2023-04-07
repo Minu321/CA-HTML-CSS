@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/3d84ee808b.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +25,12 @@
       </nav>
     </header>
     <main>
-      <div class="searchbar">search bar here</div>
+      <form action="/search" method="get">
+        <label for="search">Browse Games:</label>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <input type="search" id="search" name="q">
+      </form>
+      </div>
       <h1 class="campaign">
         Game of the year: <br />
         Space war<br />
@@ -30,6 +39,11 @@
       <img src="images/Spacewar1.jpg" alt="Pictures from space war" />
       <button class="campaignbutton">Get Space War</button>
     </main>
-    <footer></footer>
+    <footer>
+      <i class="fa-brands fa-snapchat"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-steam"></i>
+    </footer>
   </body>
 </html>
