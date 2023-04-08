@@ -60,11 +60,13 @@ nav ul {
   }
 
   body.body1 {
+    color: #C5D1D9;
     background-color: #1D2540;
     
   }
 
  body.body2 {
+    color: #1D2540;
     background-color: #C5D1D9;
   }
   
@@ -118,13 +120,32 @@ nav ul {
     margin: 0 auto;
   }
 
+  .shopitem {
+    max-width: 527px;
+    max-height: 330px;
+    background-color: #C5D1D9;
+    color: #1D2540;
+    display: block;
+    
+       
+  }
+  
+  .shopimage {
+    object-fit: cover;
+    float: left;
+    max-width: 259px;
+    max-height: 330px;
+    
+  }
+
  footer {
+    color: #1D2540;
     background-color: #7A778C;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; 
-    padding: 8px 0; 
+    padding: 10px 0; 
   }
 
   @media screen and (max-width: 1000px) {

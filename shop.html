@@ -25,31 +25,115 @@
       </nav>
     </header>
     <main>
-      <form action="/search" method="get">
-        <label for="search">Browse Games:</label>
+      <h1>Browse Games</h1>
+      <form action="#search-result" method="get">
         <button type="submit">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-        <input type="search" id="search" name="q" />
+        <input type="search" id="search" name="q" placeholder="search" />
       </form>
       <div>Sorting unit here</div>
       <ul>
-        <li>Assassin</li>
-        <li>Black</li>
-        <li>Cyberpunk</li>
-        <li>Boxer</li>
-        <li>Furious</li>
-        <li>Forge Legend</li>
-        <li>Ping Pong</li>
-        <li>Racing</li>
-        <li>Space War</li>
+        <li class="shopitem">
+          <img
+            src="/images/GameHub_assassin.jpg"
+            alt="Assassin game cover"
+            class="shopimage"
+          />
+          <p>Assassin</p>
+          <p>
+            Be a sneaky hooded ninja-villain in this fantasy-RPG. Slay the
+            demons with you sword.
+          </p>
+          <button>purchase</button>
+        </li>
+        <li class="shopitem">
+          <img
+            src="/images/GameHub_black.jpg"
+            alt="Black game cover"
+            class="shopimage"
+          />
+          <p>Cyberpunk</p>
+          <p>
+            Explore the vast open world in this rouge-like RPG. Fight monsters,
+            upgrade your gear and get all the loot!
+          </p>
+          <button>purchase</button>
+        </li>
+
+        <li class="shopitem">
+          <img
+            src="/images/GameHub_boxer.jpg"
+            alt="Boxer game cover"
+            class="shopimage">
+          <p>Boxer</p>
+          <p>Play this realistic boxing game from the safe comfort of your own home. </p>
+          <button>purchase</button>
+        </li>
+        <li class="shopitem">Cyberpunk</li>
+        <img
+          src="/images/GameHub_cyberpunk.jpg"
+          alt="Cyberpunk game cover"
+          class="shopimage" >
+          <p>Cyberpunk</p>'
+          <p>Travel to the future to save the present! Travel trough both space and tine in this dystophic RPG</p>
+          <button>purchase</button>
+      </li>
+        <li class="shopitem">
+          <img 
+          src="/images/GameHub_furious.jpg" 
+          alt="Furious game cover"
+          class="shopimage">
+          <p>Furious</p>
+        <p>Monkeys from outer space are out of the cage in this sci-fi horror game. Can you escape?</p>
+        <button>purchase</button>
+      </li>
+        <li class="shopitem">
+          <img 
+          src="/images/GameHub_forgelegend.jpg" 
+          alt="forge legend game cover"
+          class="shopimage">
+          <p>Forge Legend</p>
+          <p>Fight the dark powers with your elven bow and arrows</p>
+          <button>purchase</button>
+        </li>
+        <li class="shopitem">
+          <img 
+          src="/images/GameHub_pingpong.jpg" 
+          alt="Ping pong game cover" 
+          class="shopimage"> Ping Pong
+          <p>Ping Pong</p>
+          <p>Join the ping pong championship online or in the immersive campaign!</p>
+          <button>purchase</button>
+        </li>
+        <li class="shopitem">
+          <img 
+          src="/images/GameHub_racing.jpg" 
+          alt="Racing game cover"
+          class="shopimage"> 
+        <p>Racing</p>
+      <p>Customize and build you very own race car, bring it to the track and test you skill against other players online!</p>
+      <button>purchase</button>
+     </li>
+        <li class="shopitem">
+          <img 
+          src="/images/GameHub_spacewar.jpg" 
+          alt="Space war game cover"
+          class="shopimage">
+          <p>Space War</p>
+          <p>This game takes you into space for an interstellar experience. Operate your space shuttle and explore the galaxy!
+          </p>
+          <button>purchase</button>
+        </li>
       </ul>
     </main>
     <footer>
-      <i class="fa-brands fa-snapchat"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-steam"></i>
+      <ul class="footer">
+        <li><i class="fa-brands fa-snapchat"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-steam"></i></li>
+      </ul>
     </footer>
   </body>
 </html>
