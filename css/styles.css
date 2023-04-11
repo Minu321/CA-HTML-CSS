@@ -138,11 +138,16 @@ nav ul {
     
   }
 
+  .form__input {
+    display: block;
+  }
+
  footer {
     color: #1D2540;
     background-color: #7A778C;
-    display: flex;
-    align-items: center;
+    
+    display: block;
+    align-items: normal;
     justify-content: space-between;
     flex-wrap: wrap; 
     padding: 10px 0; 

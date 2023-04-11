@@ -26,22 +26,51 @@
     </header>
     <main>
       <h1>Shipping Details</h1>
-      <div>shippping details here</div>
-      <h1>Oder Summary</h1>
-      <ul>
-        <li>Assassin</li>
-        <li>Forge Legend</li>
-        <li>Space War</li>
-      </ul>
-      <h1>Choose Payment Method</h1>
-      <div>Payment here</div>
-      <button></button>
+      <form action="">
+        <fieldset>
+          <legend>Shipping Details</legend>
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" class="form__input" />
+          <label for="E-mail">E-mail</label>
+          <input type="text" name="E-mail" id="E-mail" class="form__input" />
+          <input type="radio" id="gift" name="gift" value="gift" />
+          <label for="gift">This is a gift</label>
+        </fieldset>
+        <h2>Oder Summary</h2>
+        <ul>
+          <li>Assassin</li>
+          <li>Forge Legend</li>
+          <li>Space War</li>
+        </ul>
+        <fieldset>
+          <legend>Choose payment method</legend>
+          <input type="radio" id="visa" name="payment method" value="visa" />
+          <label for="visa">visa</label>
+          <input
+            type="radio"
+            id="mastercard"
+            name="payment method"
+            value="mastercard"
+          />
+          <label for="mastercard">Mastercard</label>
+          <input
+            type="radio"
+            id="paypal"
+            name="payment method"
+            value="paypal"
+          />
+          <label for="paypal">Paypal</label>
+        </fieldset>
+      </form>
+      <button>Complete purchase</button>
     </main>
     <footer>
-      <i class="fa-brands fa-snapchat"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-steam"></i>
+      <ul class="footer">
+        <li><i class="fa-brands fa-snapchat"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-steam"></i></li>
+      </ul>
     </footer>
   </body>
 </html>
