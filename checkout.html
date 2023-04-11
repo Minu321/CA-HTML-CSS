@@ -26,43 +26,109 @@
     </header>
     <main>
       <h1>Shipping Details</h1>
-      <form action="">
+      <form action="/orderconfirmation.html">
         <fieldset>
           <legend>Shipping Details</legend>
           <label for="name">Your name</label>
-          <input type="text" name="name" id="name" class="form__input" />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input"
+            required
+          />
           <label for="E-mail">E-mail</label>
-          <input type="text" name="E-mail" id="E-mail" class="form__input" />
-          <input type="radio" id="gift" name="gift" value="gift" />
+          <input
+            type="text"
+            name="E-mail"
+            id="E-mail"
+            class="form__input"
+            required
+          />
+          <input type="checkbox" id="gift" name="gift" value="gift" />
           <label for="gift">This is a gift</label>
+          <input type="text" placeholder="Recipient e-mail" class="gift" />
+          <input type="text" placeholder="Add a gift message" class="gift" />
         </fieldset>
+      </form>
+      <div>
         <h2>Oder Summary</h2>
         <ul>
           <li>Assassin</li>
           <li>Forge Legend</li>
           <li>Space War</li>
         </ul>
+      </div>
+      <form action="/orderconfirmation.html">
         <fieldset>
           <legend>Choose payment method</legend>
-          <input type="radio" id="visa" name="payment method" value="visa" />
-          <label for="visa">visa</label>
           <input
-            type="radio"
+            type="checkbox"
+            id="visa"
+            class="visa"
+            name="payment method"
+            value="visa"
+          />
+          <label for="visa" class="visa">visa</label>
+          <input
+            type="number"
+            placeholder="Card holder's name"
+            class="paymentoption1"
+          />
+
+          <input
+            type="number"
+            placeholder="Card number"
+            class="paymentoption1"
+          />
+
+          <input type="number" placeholder="CVC" class="paymentoption1" />
+          <input
+            type="submit"
+            value="Complete purchase"
+            class="paymentoption1"
+          />
+          <input
+            type="checkbox"
             id="mastercard"
             name="payment method"
             value="mastercard"
           />
-          <label for="mastercard">Mastercard</label>
+          <label for="mastercard" id="mastercard">Mastercard</label>
           <input
-            type="radio"
+            type="number"
+            placeholder="Card holder's name"
+            class="paymentoption2"
+          />
+
+          <input
+            type="number"
+            placeholder="Card number"
+            class="paymentoption2"
+          />
+
+          <input type="number" placeholder="CVC" class="paymentoption2" />
+          <input
+            type="submit"
+            value="Complete purchase"
+            class="paymentoption2"
+          />
+          <input
+            type="checkbox"
             id="paypal"
             name="payment method"
             value="paypal"
           />
-          <label for="paypal">Paypal</label>
+          <label for="paypal" id="paypal">Paypal</label>
+          <input type="text" class="paymentoption3" placeholder="E-mail" />
+          <input type="text" class="paymentoption3" placeholder="Password" />
+          <input
+            type="submit"
+            value="Complete purchase"
+            class="paymentoption3"
+          />
         </fieldset>
       </form>
-      <button>Complete purchase</button>
     </main>
     <footer>
       <ul class="footer">

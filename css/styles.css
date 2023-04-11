@@ -120,42 +120,106 @@ nav ul {
     margin: 0 auto;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   .shopitem {
-    max-width: 527px;
-    max-height: 330px;
+    flex: 1;
+    max-width: 507px;
+    max-height: 310px;
+    padding: 10px;
+    margin: 10px;
     background-color: #C5D1D9;
     color: #1D2540;
-    display: block;
+   
     
        
   }
   
   .shopimage {
-    object-fit: cover;
+   
     float: left;
     max-width: 259px;
     max-height: 330px;
     
+  }
+  
+  .shopimagebig {
+    object-fit: cover;
+    float: none;
+    max-width: 379px;
+    max-height: 450px;
   }
 
   .form__input {
     display: block;
   }
 
+  .gift {
+    display: none;
+  }
+
+  #gift:checked ~ .gift {
+    display: block
+  }
+
+  .paymentoption1 {
+    display: none;
+  }
+
+  #visa:checked ~ .paymentoption1 {
+    display: block
+  }
+  #visa:checked ~ #mastercard,
+  #visa:checked ~ #paypal {
+    display: none
+  }
+  
+  
+  
+  .paymentoption2 {
+    display: none;
+  }
+
+  #mastercard:checked ~ .paymentoption2 {
+    display: block
+  }
+
+  
+  #mastercard:checked ~ #paypal {
+    display: none
+  }
+  
+  .paymentoption3 {
+    display: none;
+  }
+
+  #paypal:checked ~ .paymentoption3 {
+    display: block
+  }
+
  footer {
+    display: flex;
+    flex-direction: column;
     color: #1D2540;
     background-color: #7A778C;
     
-    display: block;
-    align-items: normal;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    padding: 10px 0; 
+    
   }
 
   @media screen and (max-width: 1000px) {
     nav li {
       margin-right: 1em;
+    }
+    
+  }
+  @media only screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
     }
   }
  
