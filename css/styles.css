@@ -60,12 +60,14 @@ nav ul {
   }
 
   body.body1 {
+    margin: 0;
     color: #C5D1D9;
     background-color: #1D2540;
     
   }
 
  body.body2 {
+    margin: 0;
     color: #1D2540;
     background-color: #C5D1D9;
   }
@@ -122,7 +124,7 @@ nav ul {
 
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -203,8 +205,7 @@ nav ul {
   }
 
  footer {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
     color: #1D2540;
     background-color: #7A778C;
     
