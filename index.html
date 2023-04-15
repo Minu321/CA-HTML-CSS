@@ -8,14 +8,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="An e-commerce for videogames, browse our selection and get you games at competitive prices">
-    met
+    <meta
+      name="description"
+      content="An e-commerce for videogames, browse our selection and get you games at competitive prices"
+    />
+
     <link href="/css/styles.css" rel="stylesheet" />
     <title>Gamehub | Home</title>
   </head>
   <body class="body1">
     <header>
-      <img src="/images/GameHub.png" alt="Logo" />
+      <img src="/images/GameHub.png" alt="Gamehub logo" class="img_logo" />
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -27,26 +30,36 @@
       </nav>
     </header>
     <main>
-      <form action="/shop.html" method="get">
+      <form action="/shop.html" method="get" class="searchbar">
         <label for="search">Browse Games:</label>
-        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <input type="text"  name="search" placeholder="search">
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="text" name="search" placeholder="search" />
       </form>
-      </div>
+
       <h1 class="campaign">
         Game of the year: <br />
         Space war<br />
         Get it here!
       </h1>
-      <img src="images/Spacewar1.jpg" alt="Pictures from space war" />
-     <a href="/product.html"> <button class="campaignbutton">Get Space War</button> </a>
+      <div class="campcontainer">
+        <img
+          src="images/Spacewar1.jpg"
+          alt="Pictures from the game space war"
+          class="img_campaign"
+        />
+      </div>
+      <a href="/product.html">
+        <button class="campaignbutton">Get Space War</button>
+      </a>
     </main>
     <footer>
-      <ul class="footer">
-        <li><i class="fa-brands fa-snapchat"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-steam"></i></li>
+      <ul class="footerul">
+        <li class="footericon"><i class="fa-brands fa-snapchat"></i></li>
+        <li class="footericon"><i class="fa-brands fa-twitter"></i></li>
+        <li class="footericon"><i class="fa-brands fa-instagram"></i></li>
+        <li class="footericon"><i class="fa-brands fa-steam"></i></li>
       </ul>
     </footer>
   </body>

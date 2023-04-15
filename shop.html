@@ -17,7 +17,7 @@
   </head>
   <body class="body1">
     <header>
-      <img src="/images/GameHub.png" alt="Logo" />
+      <img src="/images/GameHub.png" alt="Gamehub logo" class="img_logo" />
       <nav>
         <ul>
           <li><a href="index.html" class="unactive">Home</a></li>
@@ -30,11 +30,13 @@
     </header>
     <main>
       <h1>Browse Games</h1>
-      <form action="#search-result" method="get">
+      <form action="#search-result" method="get" class="searchbar">
         <button type="submit">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
         <input type="search" id="search" name="q" placeholder="search" />
+      </form>
+      <form action="get">
         <fieldset>
           <legend>Sort</legend>
           <select name="Sort">
@@ -172,10 +174,10 @@
     </main>
     <footer>
       <ul class="footer">
-        <li><i class="fa-brands fa-snapchat"></i></li>
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-steam"></i></li>
+        <li class="footericon"><i class="fa-brands fa-snapchat"></i></li>
+        <li class="footericon"><i class="fa-brands fa-twitter"></i></li>
+        <li class="footericon"><i class="fa-brands fa-instagram"></i></li>
+        <li class="footericon"><i class="fa-brands fa-steam"></i></li>
       </ul>
     </footer>
   </body>
