@@ -91,7 +91,7 @@ nav ul {
 
   
   h1 {
-    font-family: "Sarla";
+    font-family: "Sarla", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -99,13 +99,13 @@ nav ul {
   }
 
   h2 {
-    font-family: "Sarla";
+    font-family: "Sarla", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
     display: flex;
     justify-content: center;
   }
   
   p {
-    font-family: "Sarla";
+    font-family: "Sarla", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
     display: flex;
     justify-content: center;
   }
@@ -115,7 +115,7 @@ nav ul {
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: "Sarla";
+    font-family: "Sarla", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
   color: #1D2540;
   background-color: #edca3a;
   text-transform: uppercase;
@@ -129,10 +129,11 @@ nav ul {
   }
 
   .searchbar {
-
+    font-family: "Sarla", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
+    padding: 30px;
  }
 
   .campaign {
@@ -241,9 +242,8 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
+   }
 
-  }
   .cartitem{
     color: #1D2540;
     background-color: #C5D1D9;
@@ -319,6 +319,13 @@ nav ul {
   .footericon i {
     font-size: 25px; 
   }
+  #menu-checkbox{
+    display: none;
+  }
+
+  .hamburger{
+    padding: 20px;
+  }
   
  @media screen and (max-width: 1155px) {
     nav li {
@@ -342,6 +349,28 @@ nav ul {
   }
  }
  
-@media screen and (max-width: 435px){
+@media screen and (max-width: 440px){
+.searchbar{
+    font-size: 12px;
+}    
+nav a {
+    
+    
+}
+nav{
+    display: none;
+   
+}
+header{
+    
+}
 
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+}
+@media screen and (min-width: 440px){
+    .hamburger{
+        display: none;
+    }
 }
