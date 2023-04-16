@@ -180,6 +180,10 @@ nav ul {
     display: flex; 
     margin: 0 auto;
   }
+  .contact_text{
+    padding: 20px;
+    text-align: left;
+  }
 
   .img_container_abtcont {
     display: flex;
@@ -245,6 +249,7 @@ nav ul {
    }
 
   .cartitem{
+    padding: 5px;
     color: #1D2540;
     background-color: #C5D1D9;
     justify-content: space-between;
@@ -336,8 +341,20 @@ nav ul {
     nav li {
         margin-right: 1em;
  }  
+ .cartimage{
+    max-width: 225px;
+ }
  }
   @media only screen and (max-width: 500px) {
+    .img_about {
+        width: 325px;
+        height: 325px;
+    }
+    
+    .img_contact {
+        width: 325px;
+        height: 325px;
+    }
     .container {
         flex-direction: row;
  }
@@ -361,10 +378,6 @@ nav{
     display: none;
    
 }
-header{
-    
-}
-
 #menu-checkbox:checked ~ nav {
     display: block;
 }
