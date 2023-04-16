@@ -81,9 +81,12 @@ nav ul {
     color: #1D2540;
     background-color: #C5D1D9;
   }
-
-  main {
+ main{
+    flex: 1; 
+ }
+  .main1 {
     flex: 1;  
+    text-align: center;
   }
 
   
@@ -105,6 +108,10 @@ nav ul {
     font-family: "Sarla";
     display: flex;
     justify-content: center;
+  }
+
+  button{
+  
   }
 
   .contact_text {
@@ -170,32 +177,34 @@ nav ul {
 
   .container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1140px; 
+  margin: 0 auto;
+  padding: 20px;
   }
 
   .shopitem {
-    flex: 1;
-    max-width: 507px;
-    max-height: 310px;
+    flex: 0 0 calc(25% - 20px);
+    margin-bottom: 20px;
+    margin-right: 5%;
     padding: 10px;
-    margin: 10px;
     background-color: #C5D1D9;
-    color: #1D2540;    
+    color: #1D2540;
+    text-align: center;  
   }
   
   .shopimage {
-   
-    float: left;
-    max-width: 259px;
-    max-height: 330px;  
+    max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; 
   }
   
-  .shopimagebig {
+  .shopimagecontainer{
     display: flex;
     justify-content: center;
-    object-fit: cover;
+  }
+  .shopimagebig{
     max-width: 379px;
     max-height: 450px;
   }
@@ -285,6 +294,9 @@ nav ul {
     .img_logo{
         max-width: 250px;
  }
+ .shopitem {
+    flex-basis: 100%;
+  }
  }
  
 @media screen and (max-width: 435px){
