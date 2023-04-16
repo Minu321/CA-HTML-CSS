@@ -110,8 +110,18 @@ nav ul {
     justify-content: center;
   }
 
-  button{
-  
+  .ctabutton{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Sarla";
+  color: #1D2540;
+  background-color: #edca3a;
+  text-transform: uppercase;
+  font-weight: bolder;
+ 
+  border-width: 3px;
   }
 
   .contact_text {
@@ -195,9 +205,24 @@ nav ul {
   }
   
   .shopimage {
-    max-width: 100%;
+  max-width: 100%;
   height: auto;
   margin-bottom: 10px; 
+  border-width: 1px;
+  border-style: solid;
+  transition: 1s ease;
+  }
+
+  .shopimage:hover {  
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s ease;     
+  }
+
+  .price {
+    font-weight: bolder;
+    
   }
   
   .shopimagecontainer{
@@ -207,6 +232,24 @@ nav ul {
   .shopimagebig{
     max-width: 379px;
     max-height: 450px;
+  }
+
+  .cartcontainer{
+    margin: 0 auto;
+    max-width: 1000px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+  }
+  .cartitem{
+    color: #1D2540;
+    background-color: #C5D1D9;
+    justify-content: space-between;
+    border-width: 1px;
+  border-style: solid;
   }
 
   .form__input {
