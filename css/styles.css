@@ -380,6 +380,7 @@ nav{
 }
 #menu-checkbox:checked ~ nav {
     display: block;
+    flex-direction: column;
 }
 }
 @media screen and (min-width: 440px){
