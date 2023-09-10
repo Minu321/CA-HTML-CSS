@@ -1,4 +1,14 @@
-console.log(8);
+function showLoadingIndicator() {
+  const loadingElement = document.getElementById("loading");
+  loadingElement.style.display = "block";
+}
+
+function hideLoadingIndicator() {
+  const loadingElement = document.getElementById("loading");
+  loadingElement.style.display = "none";
+}
+
+showLoadingIndicator();
 
 function getProductIdFromUrl() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -15,12 +25,16 @@ function fetchProductDetails(productId) {
       }
       return response.json();
     })
-
+    .then((productData) => {
+      return productData;
+    })
     .catch((error) => {
-      console.error("Error fetching product data"), error;
+      console.error("Error fetching product data", error);
+      displayErrorMessage("An error occurred. Please try again later.");
       throw error;
     });
 }
+
 function updateProductPage(productData) {
   const titleElement = document.querySelector("h1");
   const imageElement = document.querySelector("img.shopimagebig");
@@ -29,6 +43,8 @@ function updateProductPage(productData) {
   const genreElement = document.querySelector("p#genre");
   const ageElement = document.querySelector("p#age");
   const priceElement = document.querySelector("p#price");
+
+  hideLoadingIndicator();
 
   titleElement.textContent = productData.title;
   imageElement.src = productData.image;
@@ -39,6 +55,7 @@ function updateProductPage(productData) {
   ageElement.textContent = `Age Rating: ${productData.ageRating}`;
   priceElement.textContent = `$ ${productData.price}`;
 }
+
 const productId = getProductIdFromUrl();
 fetchProductDetails(productId)
   .then((productData) => {
