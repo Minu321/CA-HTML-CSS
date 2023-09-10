@@ -6,6 +6,7 @@ fetchProducts()
   .then((productData) => {
     console.log("Fetched product data:", productData);
 
+    const imageElement = document.querySelectorAll(".shopitem img#shopimage");
     const titleElement = document.querySelectorAll(".shopitem h2#title");
     const priceElements = document.querySelectorAll(".shopitem p#price");
     const descriptionElement = document.querySelectorAll(
@@ -13,6 +14,10 @@ fetchProducts()
     );
 
     productData.forEach((product, index) => {
+      const currentImageElement = imageElement[index];
+      currentImageElement.src = product.image;
+      currentImageElement.alt = `Image showing the game cover for the game $(product.title)`;
+
       const currentTitleElement = titleElement[index];
       currentTitleElement.textContent = product.title;
 
