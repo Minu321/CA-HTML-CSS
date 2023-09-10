@@ -25,13 +25,19 @@ function updateProductPage(productData) {
   const titleElement = document.querySelector("h1");
   const imageElement = document.querySelector("img.shopimagebig");
   const descriptionElement = document.querySelector("p#description");
+  const releaseElement = document.querySelector("p#release");
+  const genreElement = document.querySelector("p#genre");
+  const ageElement = document.querySelector("p#age");
   const priceElement = document.querySelector("p#price");
 
   titleElement.textContent = productData.title;
   imageElement.src = productData.image;
   imageElement.alt = `Image showing the game cover for the game ${productData.title}`;
   descriptionElement.textContent = productData.description;
-  priceElement.textContent = productData.price;
+  releaseElement.textContent = `Released: ${productData.released}`;
+  genreElement.textContent = `Genre: ${productData.genre}`;
+  ageElement.textContent = `Age Rating: ${productData.ageRating}`;
+  priceElement.textContent = `$ ${productData.price}`;
 }
 const productId = getProductIdFromUrl();
 fetchProductDetails(productId)
