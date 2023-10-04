@@ -11,6 +11,13 @@ function fetchProducts() {
 
       return response.json();
     })
+    .then((data) => {
+      // Log the API data to the console
+      console.log(data);
+
+      // Return the data so it can be used further if needed
+      return data;
+    })
     .catch((error) => {
       console.error("Error fetching product data:", error);
       throw error;
