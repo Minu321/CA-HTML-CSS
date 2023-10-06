@@ -13,15 +13,17 @@
       content="View and manage items in your shopping cart on Gamehub. Review your order details and checkout securely."
     />
     <link href="/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/cart.css" />
     <title>Gamehub | Cart</title>
+    <script src="/js/cart.js" async></script>
   </head>
   <body class="body1">
     <header>
       <img src="/images/GameHub.png" alt="Gamehub logo" class="img_logo" />
       <input type="checkbox" id="menu-checkbox" />
       <label for="menu-checkbox" class="hamburger"
-        ><i class="fas fa-bars"></i
-      ></label>
+        ><i class="fas fa-bars"></i>
+      </label>
       <nav>
         <ul>
           <li><a href="index.html" class="unactive">Home</a></li>
@@ -34,35 +36,48 @@
     </header>
     <main class="main1">
       <h1>Shopping cart</h1>
-      <div class="cartcontainer">
-        <div class="cartitem">
-          <img
-            class="cartimage"
-            src="/images/GameHub_assassin.jpg"
-            alt="Image showing the game cover for the game Assassin"
-          />
-          <h2>Assassin</h2>
-          </form>
-          <p>10$</p>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items">
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <img
+              class="cart-item-image"
+              src="/images/GameHub_assassin.jpg"
+              width="100"
+              height="100"
+            />
+            <span class="cart-item-title">Assassin</span>
+          </div>
+          <span class="cart-price cart-column">$19.99</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1" />
+            <button class="cartremove" type="button">REMOVE</button>
+          </div>
         </div>
-        <div class="cartitem">
-          <img
-            class="cartimage"
-            src="/images/GameHub_forgelegend.jpg"
-            alt="Image showing the game cover for the game forge legend"
-          />
-          <h2>Forge Legend</h2>
-          <p>10$</p></form>
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <img
+              class="cart-item-image"
+              src="/images/GameHub_spacewar.jpg"
+              width="100"
+              height="100"
+            />
+            <span class="cart-item-title">Space war</span>
+          </div>
+          <span class="cart-price cart-column">$9.99</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="2" />
+            <button class="cartremove" type="button">REMOVE</button>
+          </div>
         </div>
-        <div class="cartitem">
-          <img
-            class="cartimage"
-            src="/images/GameHub_spacewar.jpg"
-            alt="Image showing the game cover for the game Space War"
-          />
-          <h2>Space War</h2>
-         <p>10$</p></form>
-        </div>
+      </div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$39.97</span>
       </div>
       <a href="/checkout.html"><button class="ctabutton">Checkout</button></a>
     </main>
@@ -74,6 +89,5 @@
         <li class="footericon"><i class="fa-brands fa-steam"></i></li>
       </ul>
     </footer>
-    
   </body>
 </html>

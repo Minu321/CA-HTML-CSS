@@ -280,23 +280,7 @@ font-size: large;
     margin-top: 50px;
   }
 
-  .cartcontainer{
-    margin: 0 auto;
-    max-width: 1000px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-   }
-
-  .cartitem{
-    padding: 5px;
-    color: #1D2540;
-    background-color: #C5D1D9;
-    justify-content: space-between;
-    border-width: 1px;
-  border-style: solid;
-  }
+ 
 
   .form__input {
     display: block;
@@ -371,6 +355,9 @@ font-size: large;
 
   .hamburger{
     padding: 20px;
+    font-family: "sarla";
+    
+
   }
   
  @media screen and (max-width: 1155px) {
