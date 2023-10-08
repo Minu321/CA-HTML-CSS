@@ -1,3 +1,19 @@
+let productId;
+let cartUpdated = false;
+
+window.addEventListener("load", () => {
+  const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+  productId = getProductIdFromUrl();
+  const existingItemIndex = existingCart.findIndex(
+    (item) => item.productId === productId
+  );
+  if (existingItemIndex !== -1) {
+    cartUpdated = true;
+    const addToCartButton = document.getElementById("addToCartButton");
+    addToCartButton.textContent = "Go to Cart";
+  }
+});
+
 function showLoadingIndicator() {
   const loadingElement = document.getElementById("loading");
   loadingElement.style.display = "block";
@@ -14,6 +30,7 @@ function getProductIdFromUrl() {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get("id");
 }
+productId = getProductIdFromUrl();
 
 function fetchProductDetails(productId) {
   const apiUrl = `https://api.noroff.dev/api/v1/gamehub/${productId}`;
@@ -56,7 +73,6 @@ function updateProductPage(productData) {
   priceElement.textContent = `$ ${productData.price}`;
 }
 
-const productId = getProductIdFromUrl();
 fetchProductDetails(productId)
   .then((productData) => {
     updateProductPage(productData);
@@ -64,3 +80,47 @@ fetchProductDetails(productId)
   .catch((error) => {
     console.error("Error in fetchProductDetails:", error);
   });
+
+function addToCart(productData) {
+  const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+  const existingItemIndex = existingCart.findIndex(
+    (item) => item.productId === productData.id
+  );
+
+  if (existingItemIndex !== -1) {
+    alert("This item is already in your cart.");
+  } else {
+    const newItem = {
+      productId: productData.id,
+      quantity: 1,
+      price: productData.price,
+      title: productData.title,
+      image: productData.image,
+    };
+    existingCart.push(newItem);
+    localStorage.setItem("cart", JSON.stringify(existingCart));
+
+    cartUpdated = true;
+
+    const addToCartButton = document.getElementById("addToCartButton");
+    addToCartButton.textContent = "Go to Cart";
+
+    alert("Product added to cart");
+  }
+}
+
+const addToCartButton = document.getElementById("addToCartButton");
+
+addToCartButton.addEventListener("click", () => {
+  if (cartUpdated) {
+    window.location.href = "cart.html";
+  } else {
+    fetchProductDetails(productId)
+      .then((productData) => {
+        addToCart(productData);
+      })
+      .catch((error) => {
+        console.error("Error in fetchProductDetails", error);
+      });
+  }
+});
