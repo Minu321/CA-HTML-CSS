@@ -104,6 +104,7 @@ function addToCart(productData) {
 
     const addToCartButton = document.getElementById("addToCartButton");
     addToCartButton.textContent = "Go to Cart";
+    addToCartButton.classList.add("green-button");
 
     alert("Product added to cart");
   }

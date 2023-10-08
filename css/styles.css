@@ -126,13 +126,23 @@ nav ul {
     border: none;
     transition: all 0.4s ease 0s;
   
-  
-
-   
   }
  
- 
-  
+  .green-button {
+    background-color: green;
+    color: white; 
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: "Sarla", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;}
 
   .contact_text {
     display: block;
