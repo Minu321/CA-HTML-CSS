@@ -90,3 +90,22 @@
     font-size: 1.1em;
 }
 
+
+  
+  
+  @media screen and (max-width: 440px) {
+   
+        
+    
+            .cartremove {
+              visibility: hidden;
+              width: 18px; 
+            }
+            .cartremove::before {
+              content: "x"; 
+              font-size: 10px; 
+              visibility: visible; 
+              background-color: #CC4C4C;
+              padding: 5px;
+            }
+          }

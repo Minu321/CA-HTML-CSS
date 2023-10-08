@@ -114,6 +114,12 @@ function populateCartFromLocalStorage() {
 
   const cartTotalPrice = document.querySelector(".cart-total-price");
   cartTotalPrice.textContent = `$${total.toFixed(2)}`;
+  if (existingCart.length === 0) {
+    cartItemContainer.innerHTML = "<p>Cart is empty</p>";
+    cartTotalPrice.style.display = "none"; // Hide the total price
+  } else {
+    cartTotalPrice.style.display = "block"; // Show the total price
+  }
 }
 
 populateCartFromLocalStorage();
