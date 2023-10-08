@@ -125,8 +125,13 @@ nav ul {
     display: inline-block;
     border: none;
     transition: all 0.4s ease 0s;
-  
   }
+
+    .backToStore {
+      color: #C5D1D9;
+    }
+  
+  
  
   .green-button {
     background-color: green;
@@ -206,6 +211,7 @@ nav ul {
     
     
   }
+
 
   .img_container_abtcont {
     display: flex;
