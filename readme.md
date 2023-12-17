@@ -19,7 +19,7 @@ Responsive Design: Gamehub is designed to be accessible and visually appealing a
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScrpit](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-### Running
+## Running
 
 1. Clone the repo:
 
