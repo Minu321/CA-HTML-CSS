@@ -43,4 +43,4 @@ If you'd like to contribute, please follow these guidelines:
 
 ## Contact
 
-[LinkedIn] (https://www.linkedin.com/in/mina-roseth-beni-652b90292/)
+- [LinkedIn](https://www.linkedin.com/in/mina-roseth-beni-652b90292/)
