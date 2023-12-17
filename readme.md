@@ -41,6 +41,6 @@ If you'd like to contribute, please follow these guidelines:
 4. Push to the branch: git push origin feature-name
 5. Open a pull request.
 
-## Contact
+## Contact me
 
 - [LinkedIn](https://www.linkedin.com/in/mina-roseth-beni-652b90292/)
